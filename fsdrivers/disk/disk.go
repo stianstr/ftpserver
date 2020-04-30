@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fclairamb/ftpserver/server"
-	"github.com/fclairamb/ftpserver/server/log"
+	"github.com/stianstr/ftpserver/server"
+	"github.com/stianstr/ftpserver/server/log"
 )
 
 // Driver provides an implementation of driver for disk access

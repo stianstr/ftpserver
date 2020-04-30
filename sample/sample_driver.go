@@ -25,8 +25,8 @@ import (
 
 	"github.com/naoina/toml"
 
-	"github.com/fclairamb/ftpserver/server"
-	"github.com/fclairamb/ftpserver/server/log"
+	"github.com/stianstr/ftpserver/server"
+	"github.com/stianstr/ftpserver/server/log"
 )
 
 const (

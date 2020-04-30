@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fclairamb/ftpserver/server/log"
+	"github.com/stianstr/ftpserver/server/log"
 )
 
 // Active/Passive transfer connection handler

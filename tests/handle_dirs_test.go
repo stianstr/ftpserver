@@ -7,7 +7,7 @@ import (
 
 	"gopkg.in/dutchcoders/goftp.v1"
 
-	"github.com/fclairamb/ftpserver/server"
+	"github.com/stianstr/ftpserver/server"
 )
 
 const DirKnown = "known"

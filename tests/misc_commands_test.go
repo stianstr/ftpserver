@@ -8,7 +8,7 @@ import (
 
 	"github.com/secsy/goftp"
 
-	"github.com/fclairamb/ftpserver/server"
+	"github.com/stianstr/ftpserver/server"
 )
 
 func TestSiteCommand(t *testing.T) {

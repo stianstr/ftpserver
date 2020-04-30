@@ -146,7 +146,7 @@ func (c *clientHandler) handleTYPE() error {
 	case "I":
 		c.writeMessage(StatusOK, "Type set to binary")
 	case "A":
-		c.writeMessage(StatusOK, "ASCII isn't properly supported: https://github.com/fclairamb/ftpserver/issues/86")
+		c.writeMessage(StatusOK, "ASCII isn't properly supported: https://github.com/stianstr/ftpserver/issues/86")
 	default:
 		c.writeMessage(StatusSyntaxErrorNotRecognised, "Not understood")
 	}

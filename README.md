@@ -1,10 +1,10 @@
 # Golang FTP Server library
 
-![Build](https://github.com/fclairamb/ftpserver/workflows/Build/badge.svg)
-![Docker Image](https://github.com/fclairamb/ftpserver/workflows/Docker%20Image/badge.svg)
-![Cross Build](https://github.com/fclairamb/ftpserver/workflows/Cross%20Build/badge.svg)
+![Build](https://github.com/stianstr/ftpserver/workflows/Build/badge.svg)
+![Docker Image](https://github.com/stianstr/ftpserver/workflows/Docker%20Image/badge.svg)
+![Cross Build](https://github.com/stianstr/ftpserver/workflows/Cross%20Build/badge.svg)
 [![Go Report Card](https://goreportcard.com/badge/fclairamb/ftpserver)](https://goreportcard.com/report/fclairamb/ftpserver)
-[![GoDoc](https://godoc.org/github.com/fclairamb/ftpserver?status.svg)](https://godoc.org/github.com/fclairamb/ftpserver/server)
+[![GoDoc](https://godoc.org/github.com/stianstr/ftpserver?status.svg)](https://godoc.org/github.com/stianstr/ftpserver/server)
 
 The goal is to provide a simple & comprehensive FTP Server library.
 
@@ -38,7 +38,7 @@ A demo server is shipped so that you can test how the library behaves.
 
 ```sh
 # Get and install the server
-go install github.com/fclairamb/ftpserver
+go install github.com/stianstr/ftpserver
 
 # Create a storage dir
 mkdir -p data
@@ -47,7 +47,7 @@ ftpserver -data data &
 
 # Download some file
 if [ ! -f file.bin ]; then
-    wget -O file.bin.tmp https://github.com/fclairamb/ftpserver/releases/download/v0.5/ftpserver-linux-amd64 && mv file.bin.tmp file.bin
+    wget -O file.bin.tmp https://github.com/stianstr/ftpserver/releases/download/v0.5/ftpserver-linux-amd64 && mv file.bin.tmp file.bin
 fi
 
 # Connecting to the server and uploading the file
@@ -69,7 +69,7 @@ docker run --rm -d -p 2121-2200:2121-2200 -v $(pwd)/data:/data fclairamb/ftpserv
 
 # Download some file
 if [ ! -f file.bin ]; then
-    wget -O file.bin.tmp https://github.com/fclairamb/ftpserver/releases/download/v0.5/ftpserver-linux-amd64 && mv file.bin.tmp file.bin
+    wget -O file.bin.tmp https://github.com/stianstr/ftpserver/releases/download/v0.5/ftpserver-linux-amd64 && mv file.bin.tmp file.bin
 fi
 
 # Connecting to it and uploading a file
@@ -173,14 +173,14 @@ type Settings struct {
 
 ### Sample implementation
 
-Have a look at the [sample driver](https://github.com/fclairamb/ftpserver/tree/master/sample). It shows how you can plug your FTP server to something else, in this case your file system.
+Have a look at the [sample driver](https://github.com/stianstr/ftpserver/tree/master/sample). It shows how you can plug your FTP server to something else, in this case your file system.
 
 ## Sample run
 ```
 $ ftp ftp://a:a@localhost:2121
 Trying ::1...
 Connected to localhost.
-220 Welcome on https://github.com/fclairamb/ftpserver
+220 Welcome on https://github.com/stianstr/ftpserver
 331 OK
 230 Password ok, continue
 Remote system type is UNIX.

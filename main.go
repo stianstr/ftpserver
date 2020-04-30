@@ -10,9 +10,9 @@ import (
 
 	gklog "github.com/go-kit/kit/log"
 
-	"github.com/fclairamb/ftpserver/sample"
-	"github.com/fclairamb/ftpserver/server"
-	"github.com/fclairamb/ftpserver/server/log"
+	"github.com/stianstr/ftpserver/sample"
+	"github.com/stianstr/ftpserver/server"
+	"github.com/stianstr/ftpserver/server/log"
 )
 
 var (

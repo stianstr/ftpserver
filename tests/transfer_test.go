@@ -13,7 +13,7 @@ import (
 
 	"github.com/secsy/goftp"
 
-	"github.com/fclairamb/ftpserver/server"
+	"github.com/stianstr/ftpserver/server"
 )
 
 func createTemporaryFile(t *testing.T, targetSize int) *os.File {
