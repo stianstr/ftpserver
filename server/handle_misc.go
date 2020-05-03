@@ -120,6 +120,7 @@ func (c *clientHandler) handleFEAT() error {
 		"SIZE",
 		"MDTM",
 		"REST STREAM",
+		"AUTH TLS",
 	}
 
 	if !c.server.settings.DisableMLSD {
